@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8441607056430730136
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  skipIterations:
+    m_OverrideState: 0
+    m_Value: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  scatter:
+    m_OverrideState: 0
+    m_Value: 0.7
+  clamp:
+    m_OverrideState: 0
+    m_Value: 65472
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  highQualityFiltering:
+    m_OverrideState: 0
+    m_Value: 0
+  downscale:
+    m_OverrideState: 0
+    m_Value: 0
+  maxIterations:
+    m_OverrideState: 0
+    m_Value: 6
+  dirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+    dimension: 1
+  dirtIntensity:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-7092124534792364890
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 1
+    m_Value: 0.75
+  contrast:
+    m_OverrideState: 0
+    m_Value: 5
+  colorFilter:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  hueShift:
+    m_OverrideState: 0
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: 30
+--- !u!114 &-1887216633223150654
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.35
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.241
+  rounded:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: PP 1
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -7092124534792364890}
+  - {fileID: -1887216633223150654}
+  - {fileID: 9026030083660731147}
+  - {fileID: 4850655263219377157}
+  - {fileID: -8441607056430730136}
+  - {fileID: 2446880058618064602}
+--- !u!114 &1360107440646666618
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40e2e50e1d9da242b3e0b398237512b, type: 3}
+  m_Name: ToonShadingVolume
+  m_EditorClassIdentifier: 
+  active: 0
+  enableEffect:
+    m_OverrideState: 1
+    m_Value: 1
+  outlineThickness:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineType:
+    m_OverrideState: 0
+    m_Value: 3
+  outlineOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2446880058618064602
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6186a5c93b17b6b4a973c03bfa36c4da, type: 3}
+  m_Name: TrippyVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  enableEffect:
+    m_OverrideState: 0
+    m_Value: 1
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0.5
+  edgeColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 1, b: 0, a: 1}
+  edgeWidth:
+    m_OverrideState: 0
+    m_Value: 1
+  baseColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  useGradient:
+    m_OverrideState: 1
+    m_Value: 1
+  gradientTex:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 4aa7fb35055ce024e957b11ad998e300, type: 3}
+    dimension: 1
+--- !u!114 &4749744981781216100
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618a9d55b03c5194182f67f46df38218, type: 3}
+  m_Name: BloomEffectComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.27
+  intensity:
+    m_OverrideState: 1
+    m_Value: 2.62
+  scatter:
+    m_OverrideState: 1
+    m_Value: 0.1
+  clamp:
+    m_OverrideState: 1
+    m_Value: 65472
+  maxIterations:
+    m_OverrideState: 0
+    m_Value: 5
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+  density:
+    m_OverrideState: 1
+    m_Value: 100
+  cutoff:
+    m_OverrideState: 1
+    m_Value: 0.365
+  scrollDirection:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0}
+--- !u!114 &4850655263219377157
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 0
+    m_Value: 0
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.05
+  clamp:
+    m_OverrideState: 0
+    m_Value: 0.05
+--- !u!114 &9026030083660731147
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.97275555, z: 0.9861048, w: -0.00037540786}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.9460329, z: 0.96796477, w: 0.0007508157}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.9186613, y: 0.93573105, z: 1, w: -1.1365357e-11}
